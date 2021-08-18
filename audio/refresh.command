@@ -4,7 +4,7 @@ cd $workdir
 roms=`ls res`
 result=""
 for i in $roms; do
-	if [[ $i == *.mp3 ]]; then
+	if [[ $i == *.m4a ]]; then
 		if [[ $result == "" ]]; then
 			result=$i
 		else
