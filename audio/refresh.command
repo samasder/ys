@@ -1,10 +1,10 @@
 #!/bin/bash
 workdir=$(cd $(dirname $0); pwd)
 cd $workdir
-roms=`ls roms`
+roms=`ls res`
 result=""
 for i in $roms; do
-	if [[ $i == *.nes || $i == *.NES ]]; then
+	if [[ $i == *.mp3 ]]; then
 		if [[ $result == "" ]]; then
 			result=$i
 		else
@@ -12,4 +12,4 @@ for i in $roms; do
 		fi
 	fi
 done
-echo $result > roms.json
+echo $result > list.json
